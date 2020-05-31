@@ -81,36 +81,15 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./entry.jsx");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./frontend/entry.jsx");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./congrats.jsx":
-/*!**********************!*\
-  !*** ./congrats.jsx ***!
-  \**********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-var Congrats = function Congrats() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Congratulations, you did it!");
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Congrats);
-
-/***/ }),
-
-/***/ "./entry.jsx":
-/*!*******************!*\
-  !*** ./entry.jsx ***!
-  \*******************/
+/***/ "./frontend/entry.jsx":
+/*!****************************!*\
+  !*** ./frontend/entry.jsx ***!
+  \****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -120,14 +99,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _congrats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./congrats */ "./congrats.jsx");
+/* harmony import */ var _root__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./root */ "./frontend/root.jsx");
 
 
 
 document.addEventListener("DOMContentLoaded", function () {
   var root = document.getElementById("root");
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_congrats__WEBPACK_IMPORTED_MODULE_2__["default"], null), root);
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_root__WEBPACK_IMPORTED_MODULE_2__["default"], null), root);
 });
+
+/***/ }),
+
+/***/ "./frontend/root.jsx":
+/*!***************************!*\
+  !*** ./frontend/root.jsx ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var Root = function Root() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "root-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Hello"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Root);
 
 /***/ }),
 
