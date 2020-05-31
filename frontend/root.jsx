@@ -1,8 +1,11 @@
 import React from 'react';
+import NavBar from './nav';
+import PromoBanner from './promo-banner';
 
 const Root = () => (
   <div className='root-container'>
-    <h3>Hello</h3>
+    <NavBar />
+    <PromoBanner />
   </div>
 )
 
